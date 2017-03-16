@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Welcome to the Wddit Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style-userbehaviour.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script data-require="d3@*" data-semver="3.4.6" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
+    <script src="js/userbehaviour.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1><a href="http://wdditv2.herokuapp.com/">Wddit v2 </a> Analytics Dashboard</h1>
+      <div class="time">Last updated: </div>
+      <div id='nav'class="btn-group btn-group-justified">
+        <a href="/"><div id="main" class='btn'>Main</div></a>
+        <a href="/useractivity"><div id="userActivity" class='btn'>User Activity</div></a>
+        <a href="/userbehaviour"><div id="userBehaviour" class='btn'>User Behaviour</div></a>
+        <a href="/guestsconversions"><div id="guestsAndConversions" class='btn'>Guests &amp; Conversions</div></a>
+      </div>
+
+      <div class="row" id="activity">
+        <div id="userActivityGraph" class='col-xs-6'>
+          <div id="conversionsGraphTitle">Successful guest conversions: </div>
+        </div>
+        <div id="userSearchTerms" class="col-xs-6">
+          <div id="userSearchTermsTitle">User search phrases: </div>
+        </div>
+      </div>
+
+
+    </div>
+</body>
+</html>

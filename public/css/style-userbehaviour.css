@@ -1,0 +1,105 @@
+h1 {
+  padding-top: 20px;
+}
+
+.title {
+  padding: 1em;
+}
+
+.row {
+  height: 70vh;
+  width: 100%;
+  background-color: rgb(242, 241, 249);
+}
+
+.time {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+tr{
+    background-color: #393b79;
+    color: #FFFFFF;
+
+}
+td{
+  background-color: #9c9ede;
+  color: #FFFFFF;
+}
+
+table {
+  width: 100%;
+}
+
+/*#quickstats {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats {
+  border: 1px solid black;
+  width: 30%;
+  color: black;
+}*/
+
+#userActivityGraph {
+  height: 360px;
+  position: relative;
+  width: 360px;
+}
+
+#conversionsGraphTitle, #guestSearchTermsTitle {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #8c6d31;
+}
+
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  /*box-shadow: 0 0 5px black;*/
+  color: black;
+  display: none;
+  font-size: 12px;
+  left: 130px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 80px;
+  z-index: 100;
+  border: 2px solid black;
+  opacity:1 !important;
+}
+
+#nav {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#main, #about {
+  background-color: rgb(247, 249, 223)
+}
+
+#posts, #comments,#userActivity {
+  background-color: rgb(241, 249, 242)
+}
+
+#userBehaviour {
+  background-color: rgb(242, 241, 249)
+}
+
+#guestsAndConversions, #conversions {
+  background-color: rgb(245, 227, 218)
+}
+
+.legend {
+    font-size: 12px;
+}
+
+rect {
+    stroke-width: 2;
+}

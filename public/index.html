@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Welcome to the Wddit Dashboard</title>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.1.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style-useractivity.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1><a href="http://wdditv2.herokuapp.com/">Wddit v2</a> Analytics Dashboard</h1>
+    <p>  </p>
+      <div id='nav'class="btn-group btn-group-justified">
+        <a href="/"><div id="main" class='btn'>Main</div></a>
+        <a href="/useractivity"><div id="userActivity" class='btn'>User Activity</div></a>
+        <a href="/guestsconversions"><div id="guestsAndConversions" class='btn'>Guests &amp; Conversions</div></a>
+      </div>
+
+      <div class="row" id="about">
+
+        <h3 class="container">This is a real-time analytics dashboard for <a href="http://wdditv2.herokuapp.com">Wddit</a></h3>
+        <p class="container">Inspired by the many data analytic tools and marketing trends, I built a custom dashboard for a Node/Express project during my General Assembly Web Dev Immersive course.</p>
+        <p class="container">The dashboard is a separate build from Wddit and can be adapted for other projects.</p>
+        <p class="container">Tech stack: MongoDB/Mongoose, NodeJS/Express</p>
+        <p class="container">Libraries: D3.JS, Bootstrap, Socket.io </p>
+        <p class="container">More info at <a href="#">Github</a></p><br />
+        <p class="container">Questions? Drop me a message on <a href="https://www.linkedin.com/in/olivia-chung/">LinkedIn</a> </p>
+        <p class="container"> - Olico 2017</p>
+
+      </div>
+
+    </div>
+</body>
+</html>

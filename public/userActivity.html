@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Welcome to the Wddit Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style-useractivity.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="js/useractivity.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1><a href="http://wdditv2.herokuapp.com/">Wddit v2</a> Analytics Dashboard</h1>
+      <div class="time">Last Updated: </div>
+      <div id='nav'class="btn-group btn-group-justified">
+        <a href="/"><div id="main" class='btn'>Main</div></a>
+        <a href="/useractivity"><div id="userActivity" class='btn'>User Activity</div></a>
+        <a href="/guestsconversions"><div id="guestsAndConversions" class='btn'>Guests &amp; Conversions</div></a>
+      </div>
+
+
+      <div class="row" id="posts">
+        <div id="quickstats">
+          <div id="totalUsers" class="stats">
+            <div id='usersdescript' class='descript'>Total Users: </div>
+            <div id='usersfigure' class='figure'></div>
+          </div>
+          <div id="totalPosts" class="stats">
+            <div id='postsdescript' class='descript'>Total Posts: </div>
+            <div id='postsfigure' class='figure'></div>
+          </div>
+          <div id="totalComments" class="stats">
+            <div id='commentsdescript' class='descript'>Total Comments: </div>
+            <div id='commentsfigure' class='figure'></div>
+          </div>
+        </div>
+
+        <div id="userPostsGraph" class='col-xs-12'>
+          <div id="userPostsGraphTitle">Users Posting Frequency</div>
+        </div>
+
+      </div>
+
+      <div class="row" id="comments">
+        <div id="userCommentsGraph" class='col-xs-12'>
+          <div id="userCommentsGraphTitle">Users Commenting Frequency</div>
+        </div>
+
+        <div class="col-xs-3"></div>
+      </div>
+
+    </div>
+</body>
+</html>
