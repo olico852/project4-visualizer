@@ -1,29 +1,28 @@
 # Wddit v2 Visualizer
 
-For our final one week project I built a simple data dashboard for my [Wdditv2](http://wdditv2.herokuapp.com/) project. After re-structuring the platform and rigging Wdditv2 with the necessary cookies, the visualizer polls real-time data from the live site.
+For our GA WDI final one week project I built a simple data visualizer dashboard for my [Wdditv2](http://wdditv2.herokuapp.com/) project. After re-structuring the platform and rigging Wdditv2 with the necessary cookies, the visualizer polls real-time data from the live site.
 
 I learnt how to use D3.JS, a powerful JavaScript library to create graphs dynamically. The project also gave me an overview and insights of how web dev, data management, data analytics and data visualization worked together.
 
 ## How to use this
 
-Head over to [Wdditv2](http://wdditv2.herokuapp.com/) and start the user journey as a guest. Best results in your browser's private browsing/incognito mode.
+Head over to [Wdditv2](http://wdditv2.herokuapp.com/) and start the user journey as a guest. For best results, please launch it in your browser's private browsing/incognito mode.
 
-Load [Wddit Visualizer]() on a separate tab, preferably lined next to your Wdditv2 window so that you can observe the real-time changes.  
+Load [Wddit Visualizer](http://wdditv2-data-viz.herokuapp.com) on a separate tab, preferably lined next to your Wdditv2 window so that you can observe the real-time changes.  
 
-1) Search for a post using unique keywords... you should see your query reflected on the Visualizer's Guest & Conversions tab.
-2) Register as a user... this will update the conversion pie chart in Guest & Conversions tab.
+1) Search for a post using unique keywords... you should see your query reflected on the Visualizer's Guests & Conversions tab.
+2) Register as a user... this will update the conversion pie chart in Guests & Conversions tab.
 3) As a user, post new articles and comment on other's post. You will see your user activity reflected on User Activity tab.
 
 ## Links
 
-[Live Site]()
+[Live Site](http://wdditv2-data-viz.herokuapp.com)
 [GitHub](https://github.com/olico852/project4-visualizer)
 
 ## Dependencies
 
 "dependencies": {
   "dotenv": "^4.0.0",
-  "ejs": "^2.3.1",
   "express": "^4.12.3",
   "mongodb": "^2.2.24",
   "morgan": "^1.5.2",
@@ -31,7 +30,7 @@ Load [Wddit Visualizer]() on a separate tab, preferably lined next to your Wddit
   "socket.io": "^1.7.3"
 }
 
-## Additional
+## Additional libraries/tech
 
 -jQuery
 -D3.JS v3

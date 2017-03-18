@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Welcome to the Wddit Dashboard</title>
-    <!-- <script src="https://code.jquery.com/jquery-2.1.1.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -26,14 +25,22 @@
 
       <div class="row" id="about">
 
-        <h3 class="container">This is a real-time analytics dashboard for <a href="http://wdditv2.herokuapp.com">Wddit</a></h3>
-        <p class="container">Inspired by the many data analytic tools and marketing trends, I built a custom dashboard for a Node/Express project during my General Assembly Web Dev Immersive course.</p>
+        <h3 class="container">This is a real-time analytics dashboard for <a href="http://wdditv2.herokuapp.com">Wdditv2</a></h3>
+        <p class="container">Inspired by the many data analytic tools and marketing trends, I built a custom dashboard for a Node/Express project made during my General Assembly Web Dev Immersive course.</p>
         <p class="container">The dashboard is a separate build from Wddit and can be adapted for other projects.</p>
-        <p class="container">Tech stack: MongoDB/Mongoose, NodeJS/Express</p>
-        <p class="container">Libraries: D3.JS, Bootstrap, Socket.io </p>
-        <p class="container">More info at <a href="#">Github</a></p><br />
+        <p class="container">Tech stack: MongoDB/Mongoose, NodeJS/Express.  Libraries: D3.JS, jQuery, Bootstrap, Socket.io </p><br>
+        <div class="container">
+          <h5>How to use: </h5>
+            <p class="container">Head over to <a href="http://wdditv2.herokuapp.com/">Wdditv2</a> and start the user journey as a guest. For best results, please launch it in your browser's private browsing/incognito mode. <br/>
+            Load <a href="http://wdditv2-data-viz.herokuapp.com">Wddit Visualizer</a> on a separate tab, preferably lined next to your Wdditv2 window so that you can observe the real-time changes.<br/>
+            1) Search for a post using unique keywords... you should see your query reflected on the Visualizer's Guests &amp; Conversions tab. <br>
+            2) Register as a user and this will update the conversion pie chart in Guests &amp; Conversions tab.<br>
+            3) As a user, post new articles and comment on other's post. You will see your user activity reflected on User Activity tab.<br>
+          </p>
+        </div>
+        <p class="container">Source code at <a href="https://github.com/olico852/project4-visualizer">Github</a></p>
         <p class="container">Questions? Drop me a message on <a href="https://www.linkedin.com/in/olivia-chung/">LinkedIn</a> </p>
-        <p class="container"> - Olico 2017</p>
+        <p class="container"> - Olivia Chung 2017</p>
 
       </div>
 
