@@ -26,7 +26,7 @@ let guestInteractionData = []
 let userInteractionData = []
 let db = null
 
-/* establish connection with db once server loads. this connection does not close */
+/* establish connection with db once server loads. polls data every 10 secs */
 MongoClient.connect(process.env.MONGO_URI, function (err, newConnection) {
   if (err) {
     throw err
@@ -82,13 +82,8 @@ function pollServer () {
       io.emit('repliesUpdate', repliesData)
     })
   })
-    // if using sockets, include a broadcast to all open sockets so they will automatically update themselves
 }
 
-// app.set('views', './views')
-// app.set('view engine', 'ejs')
-
-// app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, '/public')))
 app.use(morgan('dev'))
 
@@ -96,9 +91,10 @@ app.get('/useractivity', function (req, res) {
   res.sendFile('userActivity.html', {root: path.join(__dirname, '/public')})
 })
 
-app.get('/userbehaviour', function (req, res) {
-  res.sendFile('userBehaviour.html', {root: path.join(__dirname, '/public')})
-})
+// removed due to errors
+// app.get('/userbehaviour', function (req, res) {
+//   res.sendFile('userBehaviour.html', {root: path.join(__dirname, '/public')})
+// })
 
 app.get('/guestsconversions', function (req, res) {
   res.sendFile('guestsconversions.html', {root: path.join(__dirname, '/public')})

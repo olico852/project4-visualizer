@@ -30,19 +30,6 @@ table {
   width: 100%;
 }
 
-/*#quickstats {
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.stats {
-  border: 1px solid black;
-  width: 30%;
-  color: black;
-}*/
-
 #conversionsGraph {
   height: 360px;
   position: relative;
